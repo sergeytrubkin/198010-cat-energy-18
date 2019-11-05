@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Трубкин](https://up.htmlacademy.ru/adaptive/18/user/198010).
-* Наставник: `Неизвестно`.
+* Наставник: `Мурат Баркинхоев`.
 
 ---
 
