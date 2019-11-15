@@ -24,11 +24,12 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+body {
   min-width: 320px;
   font-family: $font-family;
   font-size: 14px;
   font-weight: $font-weight-regular;
+  line-height: $line-height;
   background-color: #fff;
   color: $text-color;
 }
@@ -56,4 +57,13 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  padding: 13px 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color-white;
+  background-color: $btn-bg-color;
 }

@@ -10,16 +10,26 @@
 <body>
   <!-- page-header -->
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/35x40" width="35" height="40" alt="Кэт энерджи">
-    </a>
-    <nav class="main-nav">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/35x40" width="35" height="40" alt="Кэт энерджи">
+      </a>
+      <a class="page-header__logo">
+        <img src="https://via.placeholder.com/100x40" width="100" height="40" alt="Кэт энерджи">
+      </a>
       <button class="main-nav__button" type="button"></button>
+    </div>
+
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Подбор программы</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item">
+            <a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">Подбор программы</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -27,15 +37,16 @@
   <!-- page-header end -->
 
   <!-- page-main -->
-  <main class="page-mane">
+  <main class="page-main">
 
     <!-- promo -->
     <section class="promo">
-      <h1 class="promo__heading">Функциональное питание для котов</h1>
-      <p class="promo__text">Занялся собой? Займись котом!</p>
-      <img class="promo__img" src="https://via.placeholder.com/240x240" width="240" height="240"
-        alt="Cat energy pro с курицей">
-      <a href="form.html" class="promo__button programs-button">Подобрать программу</a>
+      <div class="promo__heading-block">
+        <h1 class="promo__heading">Функциональное<br> питание для котов</h1>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat energy pro с курицей">
+      <a href="form.html" class="promo__button programs-button button">Подобрать программу</a>
     </section>
     <!-- promo end -->
 
@@ -51,7 +62,7 @@
           <a href="#" class="programs__link">Каталог Slim</a>
         </li>
         <li class="programs__item">
-          <h3 class="programs__title">Набор массы</h3>
+          <h3 class="programs__title programs__title--mass">Набор массы</h3>
           <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#" class="programs__link">Каталог Pro</a>
