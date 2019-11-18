@@ -1,5 +1,6 @@
 .programs {
   width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -75,7 +76,7 @@
   position: relative;
 
   font-size: $font-size-medium;
-  text-color: $text-color-heading;
+  color: $text-color-heading;
 
   &::after {
     content: "";
@@ -83,7 +84,7 @@
     width: 24px;
     height: 11px;
     top: 7px;
-    right: -20px;
+    right: -40px;
 
     background-image: url(../../img/icon-right-arrow-long.svg);
   }

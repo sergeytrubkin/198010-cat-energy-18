@@ -1,13 +1,6 @@
-.page-header {
-  min-width: 320px;
-}
-
-.page-header__wrapper {
+.page-header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 320px;
-  padding: 0 20px;
+
   padding-top: 10px;
-  margin: 0 auto;
 }

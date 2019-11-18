@@ -1,0 +1,28 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__container {
+  display: flex;
+}
+
+.contacts__heading {
+  width: 50%;
+
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 50%;
+
+  font-family: "Arial", sans-serif;
+  line-height: $line-height-medium;
+}
+
+.contacts__map {
+  width: 100%;
+}
