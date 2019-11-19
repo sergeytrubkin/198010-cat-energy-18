@@ -30,20 +30,20 @@
     top: 0;
     left: 0;
 
-    background-image: url(../../img/advantage-leaf@1x.png);
+    background-image: url("../../img/advantage-leaf@1x.png");
     background-color: $btn-bg-color;
     background-position: center;
   }
 }
 
 .product-description__item:nth-child(2) .product-description__text::before {
-  background-image: url(../../img/advantage-powder@1x.png);
+  background-image: url("../../img/advantage-powder@1x.png");
 }
 
 .product-description__item:nth-child(3) .product-description__text::before {
-  background-image: url(../../img/advantage-dining@1x.png);
+  background-image: url("../../img/advantage-dining@1x.png");
 }
 
 .product-description__item:last-child .product-description__text::before {
-  background-image: url(../../img/advantage-clock@1x.png);
+  background-image: url("../../img/advantage-clock@1x.png");
 }

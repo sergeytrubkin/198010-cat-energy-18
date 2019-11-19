@@ -13,14 +13,12 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -30,7 +28,7 @@ body {
   font-size: 14px;
   font-weight: $font-weight-regular;
   line-height: $line-height;
-  background-color: #fff;
+  background-color: #ffffff;
   color: $text-color;
 }
 
@@ -51,8 +49,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);

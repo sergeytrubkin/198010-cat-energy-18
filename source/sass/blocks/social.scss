@@ -14,7 +14,7 @@
     width: 22px;
     height: 12px;
 
-    background-image: url(../../img/icon-vk.svg);
+    background-image: url("../../img/icon-vk.svg");
   }
 
   &--insta {
@@ -22,13 +22,13 @@
     height: 16px;
     margin: 0 40px;
 
-    background-image: url(../../img/icon-insta.svg);
+    background-image: url("../../img/icon-insta.svg");
   }
 
   &--fb {
     width: 10px;
     height: 19px;
 
-    background-image: url(../../img/icon-fb.svg);
+    background-image: url("../../img/icon-fb.svg");
   }
 }
