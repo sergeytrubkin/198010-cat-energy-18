@@ -41,6 +41,49 @@
 
 .promo__button {
   @include link-style();
+
   width: 280px;
   color: $text-color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+
+    align-items: flex-start;
+    padding-left: 90px;
+  }
+
+  .promo__heading-block {
+    width: auto;
+    padding: 0;
+
+    text-align: left;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .promo__heading {
+    color: #111111;
+    font-size: $font-size-heading-big;
+    line-height: $line-height-big;
+  }
+
+  .promo__text {
+    margin-right: auto;
+
+    color: #111111;
+    font-size: 20px;
+    line-height: $line-height-medium;
+  }
+
+  .promo__img {
+    margin: 0 auto;
+  }
+
+  .promo__button {
+    position: absolute;
+    left: 120;
+    bottom: 190px;
+  }
 }
