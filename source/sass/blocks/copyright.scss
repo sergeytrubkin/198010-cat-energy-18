@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.copyright__link {
+  @include link-style();
+  position: relative;
+  width: 100%;
+
+  text-transform: capitalize;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 0;
+    right: 0;
+
+    background-image: url("../../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
