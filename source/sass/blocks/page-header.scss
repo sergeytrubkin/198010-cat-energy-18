@@ -29,3 +29,12 @@
     display: none;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .page-header__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+}

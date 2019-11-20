@@ -3,3 +3,19 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
