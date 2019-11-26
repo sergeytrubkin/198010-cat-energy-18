@@ -31,6 +31,12 @@
 }
 
 @media (min-width: $desctop-width) {
+  .page-header {
+    position: relative;
+
+    z-index: 10;
+  }
+  
   .page-header__wrapper {
     width: 1440px;
     padding: 0 110px;
