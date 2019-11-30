@@ -1,13 +1,23 @@
 .page-main {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
 }
 
 .page-main__heading {
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-
   font-weight: $font-weight-regular;
   font-size: $font-size-heading;
   line-height: $line-height-big;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__container {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .page-main__heading {
+    font-size: $font-size-heading-big;
+  }
 }

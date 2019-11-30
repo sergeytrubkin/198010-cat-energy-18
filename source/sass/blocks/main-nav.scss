@@ -48,8 +48,13 @@
 
   .main-nav__link {
     padding: 0;
+    padding-bottom: 8px;
 
     font-size: 18px;
+
+    &--active {
+      border-bottom: 2px solid $accent-color;
+    }
   }
 }
 
@@ -57,8 +62,12 @@
   .main-nav {
     max-width: 50%;
   }
+
   .main-nav__link {
     font-size: 20px;
-    color: #ffffff;
+
+    &--color {
+      color: #ffffff;
+    }
   }
 }

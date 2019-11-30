@@ -17,7 +17,7 @@
     height: 50px;
 
     border-radius: 50%;
-    background-color: $btn-bg-color;
+    background-color: $accent-color;
   }
 
   &::after {
@@ -99,7 +99,7 @@
       height: 200px;
 
       border-radius: 50%;
-      background-color: $btn-bg-color;
+      background-color: $accent-color;
     }
 
     &::after {
@@ -175,7 +175,7 @@
       height: 100px;
 
       border-radius: 50%;
-      background-color: $btn-bg-color;
+      background-color: $accent-color;
     }
 
     &::after {
