@@ -2,5 +2,45 @@
   display: flex;
   justify-content: space-between;
 
+  width: 320px;
+  padding: 0 20px;
   padding-top: 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-header {
+    position: relative;
+
+    z-index: 10;
+  }
+  
+  .page-header__wrapper {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
 }

@@ -22,3 +22,52 @@
 
   padding: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+    width: auto;
+    margin-right: 35px;
+
+    border: 0;
+
+    &:last-child {
+      margin-right: 0;
+
+      border: 0;
+    }
+  }
+
+  .main-nav__link {
+    padding: 0;
+    padding-bottom: 8px;
+
+    font-size: 18px;
+
+    &--active {
+      border-bottom: 2px solid $accent-color;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav {
+    max-width: 50%;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+
+    &--color {
+      color: #ffffff;
+    }
+  }
+}

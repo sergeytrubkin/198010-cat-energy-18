@@ -11,29 +11,29 @@
 <body>
   <!-- page-header -->
   <header class="page-header">
-    <div class="page-header__container container">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/35x40" width="35" height="40" alt="Кэт энерджи">
-      </a>
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/100x40" width="100" height="40" alt="Кэт энерджи">
-      </a>
-      <button class="main-nav__button" type="button"></button>
-    </div>
-
-    <nav class="main-nav">
-      <div class="main-nav__container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item">
-            <a href="catalog.html" class="main-nav__link">Каталог продукции</a></li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">Подбор программы</a>
-          </li>
-        </ul>
+    <div class="page-header__wrapper">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="190" height="38" alt="Кэт энерджи">
+        </a>
+        <button class="main-nav__button" type="button"></button>
       </div>
-    </nav>
+      <!-- main-nav -->
+      <nav class="main-nav">
+        <div class="main-nav__container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--color">Главная</a></li>
+            <li class="main-nav__item">
+              <a href="catalog.html" class="main-nav__link main-nav__link--color">Каталог продукции</a></li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link main-nav__link--color">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- main-nav end -->
+    </div>
   </header>
   <!-- page-header end -->
 
@@ -42,38 +42,44 @@
 
     <!-- promo -->
     <section class="promo">
-      <div class="promo__heading-block">
-        <h1 class="promo__heading">Функциональное<br> питание для котов</h1>
-        <p class="promo__text">Занялся собой? Займись котом!</p>
+      <div class="promo__bg"></div>
+      <div class="promo__wrapper container">
+        <div class="promo__heading-block">
+          <h1 class="promo__heading">Функциональное<br> питание для котов</h1>
+          <p class="promo__text">Занялся собой? Займись котом!</p>
+        </div>
+        <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271"
+          alt="Cat energy pro с курицей">
+        <a href="form.html" class="promo__button programs-button button">Подобрать программу</a>
       </div>
-      <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat energy pro с курицей">
-      <a href="form.html" class="promo__button programs-button button">Подобрать программу</a>
     </section>
     <!-- promo end -->
 
     <!-- programs -->
     <section class="programs">
-      <h3 class="visually-hidden">Список программ</h3>
-      <ul class="programs__list">
-        <li class="programs__item">
-          <h3 class="programs__title">Похудение</h3>
-          <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по
-            деревьям? Пора на
-            диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="#" class="programs__link">Каталог Slim</a>
-        </li>
-        <li class="programs__item">
-          <h3 class="programs__title programs__title--mass">Набор массы</h3>
-          <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="#" class="programs__link">Каталог Pro</a>
-        </li>
-      </ul>
+      <div class="container">
+        <h3 class="visually-hidden">Список программ</h3>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <h3 class="programs__title">Похудение</h3>
+            <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на
+              диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="#" class="programs__link">Каталог Slim</a>
+          </li>
+          <li class="programs__item programs__item--mass">
+            <h3 class="programs__title">Набор массы</h3>
+            <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="#" class="programs__link">Каталог Pro</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- programs end-->
 
     <!-- product-description -->
-    <section class="product-description">
+    <section class="product-description container">
       <h2 class="product-description__heading">Как это работает</h2>
       <ul class="product-description__list">
         <li class="product-description__item">

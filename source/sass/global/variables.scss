@@ -2,7 +2,7 @@
 $text-color: #444444;
 $text-color-white: #ffffff;
 $text-color-heading: #111111;
-$btn-bg-color: #68b738;
+$accent-color: #68b738;
 
 $font-family: "Oswald", "Arial", sans-serif;
 
@@ -11,6 +11,7 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 
 /* font-size */
+$font-size-heading-big: 60px;
 $font-size-heading: 36px;
 $font-size-big: 24px;
 $font-size-medium: 16px;
@@ -22,3 +23,7 @@ $line-height-big: 60px;
 $line-height-medium: 20px;
 $line-height: 18px;
 $line-height-small: 16px;
+
+/* media-width */
+$tablet-width: 768px;
+$desctop-width: 1440px;
