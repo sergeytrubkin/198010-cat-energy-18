@@ -1,8 +1,11 @@
 .product-description__heading {
-  margin-bottom: 35px;
+  margin-top: 17px;
+  margin-bottom: 30px;
 
   font-weight: $font-weight-regular;
-  font-size: $font-size-big;
+  font-size: $font-size-heading;
+
+  line-height: $line-height-big;
 }
 
 .product-description__list {
@@ -11,13 +14,14 @@
 
 .product-description__item {
   position: relative;
+  margin-bottom: 28px;
 
   &::before {
     content: "";
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 0;
+    top: -4px;
     left: 0;
 
     background-image: url("../../img/advantage-leaf@1x.png");
@@ -41,8 +45,7 @@
 
 .product-description__text {
   margin: 0;
-  margin-bottom: 20px;
-  padding-left: 75px;
+  padding-left: 80px;
   font-family: "Arial", sans-serif;
 }
 

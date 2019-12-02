@@ -3,8 +3,7 @@
   justify-content: space-between;
 
   width: 320px;
-  padding: 0 20px;
-  padding-top: 10px;
+  padding: 13px 20px;
   margin: 0 auto;
 }
 
@@ -24,10 +23,6 @@
     margin: 0;
     padding: 0;
   }
-
-  .main-nav__button {
-    display: none;
-  }
 }
 
 @media (min-width: $desctop-width) {
@@ -36,7 +31,7 @@
 
     z-index: 10;
   }
-  
+
   .page-header__wrapper {
     width: 1440px;
     padding: 0 110px;
