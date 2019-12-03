@@ -31,6 +31,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 150px;
+  }
+
   .page-footer__container {
     flex-direction: row;
   }

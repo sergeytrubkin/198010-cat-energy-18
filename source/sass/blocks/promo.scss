@@ -73,12 +73,14 @@
   .promo__wrapper {
     position: relative;
     align-items: flex-start;
-    padding-left: 90px;
+    padding-top: 30px;
+    padding-bottom: 320px;
   }
 
   .promo__heading-block {
     width: auto;
     padding: 0;
+    padding-left: 90px;
 
     text-align: left;
     background-image: none;
@@ -86,6 +88,8 @@
   }
 
   .promo__heading {
+    margin-bottom: 20px;
+
     color: #111111;
     font-size: $font-size-heading-big;
     line-height: $line-height-big;
@@ -105,8 +109,11 @@
 
   .promo__button {
     position: absolute;
-    left: 120;
-    bottom: 190px;
+    width: auto;
+    left: 120px;
+    bottom: 510px;
+
+    padding: 15px 25px;
 
     font-size: 20px;
     line-height: 20px;

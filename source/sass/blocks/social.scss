@@ -38,3 +38,24 @@
     background-position: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    &--vk {
+      width: 30px;
+      height: 25px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+      margin: 0 27px;
+    }
+
+    &--fb {
+      width: 22px;
+      height: 27px;
+      margin-right: 12px;
+    }
+  }
+}
