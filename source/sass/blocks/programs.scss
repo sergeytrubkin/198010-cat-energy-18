@@ -178,11 +178,16 @@
   }
 
   .programs__item {
-    padding-right: 50px;
     width: 570px;
+    padding-right: 50px;
+    margin-bottom: 55px;
 
     &:first-child {
       margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-bottom: 55px;
     }
 
     &::before {
@@ -228,5 +233,9 @@
   .programs__title {
     margin-left: 165px;
     margin-bottom: 70px;
+  }
+
+  .programs__text {
+    margin-bottom: 12px;
   }
 }

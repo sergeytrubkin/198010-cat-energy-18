@@ -53,3 +53,10 @@
     border-bottom: none;
   }
 }
+
+@media (min-width: $desctop-width) {
+  .page-footer__container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}

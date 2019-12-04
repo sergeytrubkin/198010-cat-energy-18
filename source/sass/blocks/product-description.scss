@@ -125,6 +125,10 @@
 }
 
 @media (min-width: $desctop-width) {
+  .product-description__heading {
+    margin-bottom: 75px;
+  }
+
   .product-description__item {
     width: 245px;
     margin-right: 80px;
