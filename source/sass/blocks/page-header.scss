@@ -12,11 +12,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: none;
+  }
+
   .page-header__wrapper {
     width: 768px;
-    padding: 0 30px;
+    padding: 25px 30px;
     margin: 0 auto;
-    padding-top: 25px;
 
     display: flex;
     justify-content: space-between;
