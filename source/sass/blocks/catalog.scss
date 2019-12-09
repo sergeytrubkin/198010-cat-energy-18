@@ -265,6 +265,7 @@
   .catalog__item {
     width: 245px;
     margin-right: 80px;
+    padding-top: 122px;
 
     &:nth-child(odd) {
       margin-right: 80px;
@@ -273,5 +274,33 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .catalog__inner-wrap {
+    width: 169px;
+  }
+
+  .catalog__title {
+    padding: 0 10px;
+  }
+
+  .catalog__table {
+    margin-bottom: 30px;
+  }
+
+  .catalog__button {
+    width: 169px;
+  }
+
+  .catalog__item--all {
+    padding-top: 160px;
+  }
+
+  .catalog__wrapper--all {
+    width: auto;
+  }
+
+  .catalog__title--all {
+    padding: 0 40px;
   }
 }
