@@ -14,6 +14,11 @@
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: none;
+    margin-bottom: 5px;
+
+    &__inner-page {
+      margin-bottom: 0;
+    }
   }
 
   .page-header__wrapper {
@@ -41,8 +46,8 @@
   }
 
   .page-header__wrapper {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
     margin: 0 auto;
     padding-top: 55px;
     padding-bottom: 45px;
