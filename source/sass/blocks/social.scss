@@ -14,21 +14,48 @@
     width: 22px;
     height: 12px;
 
-    background-image: url("../../img/icon-vk.svg");
+    background-image: url("../img/icon-vk.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--insta {
-    width: 16px;
+    width: 22px;
     height: 16px;
-    margin: 0 40px;
+    margin: 0 33px;
 
-    background-image: url("../../img/icon-insta.svg");
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--fb {
-    width: 10px;
+    width: 22px;
     height: 19px;
 
-    background-image: url("../../img/icon-fb.svg");
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    &--vk {
+      width: 30px;
+      height: 25px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+      margin: 0 27px;
+    }
+
+    &--fb {
+      width: 22px;
+      height: 27px;
+      margin-right: 12px;
+    }
   }
 }

@@ -25,4 +25,11 @@
 
 .contacts__map {
   width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    height: 396px;
+  }
 }

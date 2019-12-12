@@ -1,17 +1,29 @@
+.page-header {
+  border-bottom: 1px solid #ededed;
+}
+
 .page-header__container {
   display: flex;
   justify-content: space-between;
 
   width: 320px;
-  padding: 0 20px;
-  padding-top: 10px;
+  padding: 13px 20px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: none;
+    margin-bottom: 5px;
+
+    &__inner-page {
+      margin-bottom: 0;
+    }
+  }
+
   .page-header__wrapper {
     width: 768px;
-    padding: 0 30px;
+    padding: 25px 30px;
     margin: 0 auto;
 
     display: flex;
@@ -24,10 +36,6 @@
     margin: 0;
     padding: 0;
   }
-
-  .main-nav__button {
-    display: none;
-  }
 }
 
 @media (min-width: $desctop-width) {
@@ -36,11 +44,12 @@
 
     z-index: 10;
   }
-  
+
   .page-header__wrapper {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 55px;
+    padding-bottom: 45px;
   }
 }

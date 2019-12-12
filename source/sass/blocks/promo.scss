@@ -13,7 +13,7 @@
   color: $text-color-white;
 
   background-color: #64a83b;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -39,7 +39,8 @@
 }
 
 .promo__heading {
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-size: $font-size-heading;
   font-weight: $font-weight-regular;
 
@@ -47,11 +48,14 @@
 }
 
 .promo__text {
+  margin-bottom: 18px;
+
   text-transform: uppercase;
 }
 
 .promo__img {
   margin-top: -150px;
+  margin-bottom: 2px;
 }
 
 .promo__button {
@@ -69,12 +73,13 @@
   .promo__wrapper {
     position: relative;
     align-items: flex-start;
-    padding-left: 90px;
+    padding-bottom: 320px;
   }
 
   .promo__heading-block {
     width: auto;
     padding: 0;
+    padding-left: 90px;
 
     text-align: left;
     background-image: none;
@@ -82,6 +87,8 @@
   }
 
   .promo__heading {
+    margin-bottom: 20px;
+
     color: #111111;
     font-size: $font-size-heading-big;
     line-height: $line-height-big;
@@ -101,8 +108,11 @@
 
   .promo__button {
     position: absolute;
-    left: 120;
-    bottom: 190px;
+    width: auto;
+    left: 120px;
+    bottom: 510px;
+
+    padding: 15px 25px;
 
     font-size: 20px;
     line-height: 20px;
@@ -112,7 +122,7 @@
 @media (min-width: $desctop-width) {
   .promo {
     min-height: 695px;
-    margin-top: -132px;
+    margin-top: -165px;
     margin-bottom: 80px;
     padding-top: 150px;
     padding-bottom: 30px;
@@ -125,12 +135,25 @@
     top: 0;
     right: 0;
 
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: left center;
+    background-size: cover;
+  }
+
+  .promo__wrapper {
+    padding-top: 65px;
+    padding-bottom: 10px;
   }
 
   .promo__heading-block {
+    padding-left: 80px;
+    margin-bottom: 35px;
+
     background-color: transparent;
+  }
+
+  .promo__heading {
+    margin-top: 8px;
   }
 
   .promo__img {
@@ -141,5 +164,6 @@
 
   .promo__button {
     position: static;
+    margin-left: 80px;
   }
 }

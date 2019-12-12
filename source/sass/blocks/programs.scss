@@ -11,8 +11,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 25px;
-    top: 25px;
+    left: 22px;
+    top: 26px;
     width: 50px;
     height: 50px;
 
@@ -23,43 +23,50 @@
   &::after {
     content: "";
     position: absolute;
-    left: 35px;
-    top: 25px;
+    left: 30px;
+    top: 24px;
     width: 35px;
     height: 49px;
 
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .programs__item--mass::after {
   content: "";
   position: absolute;
-  left: 15px;
+  left: 13px;
   top: 35px;
   width: 67px;
   height: 28px;
 
-  background-image: url("../../img/icon-cat-pro.svg");
+  background-image: url("../img/icon-cat-pro.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .programs__title {
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 18px;
+  margin-bottom: 35px;
   padding-left: 70px;
 
   text-transform: uppercase;
   font-size: $font-size-big;
   font-weight: $font-weight-regular;
+
+  line-height: 24px;
 }
 
 .programs__text {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
 
   font-family: "Arial", sans-serif;
 
@@ -80,19 +87,25 @@
     width: 24px;
     height: 11px;
     top: 7px;
-    right: -40px;
+    right: -34px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
 
 @media (min-width: $tablet-width) {
   .programs__item {
     padding: 75px 50px;
-    padding-right: 265px;
+    padding-right: 275px;
+    padding-bottom: 58px;
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
 
     &::before {
-      top: 95px;
+      top: 92px;
       left: auto;
       right: 62px;
       width: 200px;
@@ -103,20 +116,20 @@
     }
 
     &::after {
-      top: 95px;
+      top: 78px;
       left: auto;
       right: 62px;
       width: 200px;
-      height: 200px;
+      height: 196px;
 
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
   }
 
   .programs__item--mass {
-    padding-right: 310px;
+    padding-right: 315px;
 
     &::after {
       left: auto;
@@ -125,7 +138,7 @@
       width: 268px;
       height: 112px;
 
-      background-image: url("../../img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -134,13 +147,17 @@
   .programs__title {
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 26px;
 
     font-size: 36px;
     line-height: 37px;
   }
 
   .programs__text {
+    margin-bottom: 34px;
+
     font-size: 16px;
+    line-height: 24px;
 
     border-bottom: none;
   }
@@ -149,7 +166,8 @@
     font-size: 20px;
 
     &::after {
-      top: 12px;
+      top: 9px;
+      right: -50px;
     }
   }
 }
@@ -160,11 +178,16 @@
   }
 
   .programs__item {
-    padding-right: 50px;
     width: 570px;
+    padding-right: 50px;
+    margin-bottom: 55px;
 
     &:first-child {
       margin-right: 80px;
+    }
+
+    &:last-child {
+      margin-bottom: 55px;
     }
 
     &::before {
@@ -180,12 +203,12 @@
 
     &::after {
       left: 65px;
-      top: 43px;
+      top: 40px;
       right: auto;
       width: 71px;
       height: 97px;
 
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -201,7 +224,7 @@
       width: 134px;
       height: 56px;
 
-      background-image: url("../../img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -209,6 +232,10 @@
 
   .programs__title {
     margin-left: 165px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
+  }
+
+  .programs__text {
+    margin-bottom: 8px;
   }
 }
