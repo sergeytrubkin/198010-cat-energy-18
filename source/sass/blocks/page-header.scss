@@ -8,6 +8,7 @@
 
   width: 320px;
   padding: 13px 20px;
+  padding-top: 12px;
   margin: 0 auto;
 }
 
@@ -36,9 +37,14 @@
     margin: 0;
     padding: 0;
   }
+
+  .page-header__logo img {
+    width: 228px;
+    height: 58px;
+  }
 }
 
-@media (min-width: $desctop-width) {
+@media (min-width: $desktop-width) {
   .page-header {
     position: relative;
 
@@ -49,7 +55,12 @@
     width: 1300px;
     padding: 0 40px;
     margin: 0 auto;
-    padding-top: 55px;
+    padding-top: 53px;
     padding-bottom: 45px;
+  }
+
+  .page-header__logo img {
+    width: 202px;
+    height: 59px;
   }
 }
