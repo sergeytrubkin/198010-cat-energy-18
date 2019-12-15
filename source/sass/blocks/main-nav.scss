@@ -85,6 +85,10 @@
   .main-nav__link {
     font-size: 20px;
 
+    &--active {
+      padding-bottom: 8px;
+    }
+
     &--active-white {
       border-bottom: 2px solid #ffffff;
     }
