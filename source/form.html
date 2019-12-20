@@ -19,7 +19,7 @@
             <img src="img/logo-mobile.svg" width="190" height="38" alt="Кэт энерджи">
           </picture>
         </a>
-        <button class="main-nav__button" type="button"></button>
+        <button class="main-nav__button" type="button" aria-label="Переключатель меню"></button>
       </div>
       <!-- main-nav -->
       <nav class="main-nav">
@@ -157,13 +157,28 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vk">Кэт энерджи в Вконтакте</a>
+            <a href="#" class="social__link social__link--vk">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+              Кэт энерджи в Вконтакте
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--insta">Кэт энерджи в Инстаграмм</a>
+            <a href="#" class="social__link social__link--insta">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              Кэт энерджи в Инстаграмм
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--fb">Кэт энерджи в Фейсбук</a>
+            <a href="#" class="social__link social__link--fb">
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              Кэт энерджи в Фейсбук
+            </a>
           </li>
         </ul>
       </div>
@@ -171,7 +186,12 @@
 
       <!-- page-footer__copyright -->
       <div class="page-footer__copyright copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <svg class="copyright__icon" width="45" height="40">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+          HTML Academy
+        </a>
       </div>
       <!-- page-footer__copyright end -->
 
