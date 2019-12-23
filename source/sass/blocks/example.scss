@@ -1,0 +1,162 @@
+.example {
+  padding: 20px 0;
+  background-color: #f2f2f2;
+}
+
+.example__heading {
+  line-height: $line-height-big;
+  color: #111111;
+  font-size: $font-size-heading;
+  font-weight: $font-weight-regular;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+}
+
+.example__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__result,
+.example__time {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 125px;
+
+  text-align: center;
+  font-size: $font-size-big;
+  line-height: 24px;
+
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+
+.example__description {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  padding: 0 10px;
+
+  background-color: #f2f2f2;
+
+  text-transform: lowercase;
+  font-size: $font-size-small;
+  line-height: 12px;
+}
+
+.example__costs {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+}
+
+.example__list {
+  @include list-style-none();
+  margin-bottom: 30px;
+}
+
+.example__item:last-child {
+  display: none;
+}
+
+.example__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__before,
+.example__after {
+  background-color: transparent;
+
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  text-transform: uppercase;
+
+  border: 0;
+}
+
+.example__scale {
+  position: relative;
+  width: 30%;
+  height: 14px;
+  margin: 0 17px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 6px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: $accent-color;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+
+  .example__heading {
+    font-size: $font-size-heading-big;
+    line-height: $line-height-big;
+  }
+
+  .example__text {
+    padding-right: 10px;
+
+    font-size: $font-size-medium;
+    line-height: 24px;
+  }
+
+  .example__wrapper-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .example__block {
+    width: 50%;
+  }
+
+  .example__result,
+  .example__time {
+    width: 162px;
+    padding-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .example__description {
+    min-width: 80%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+
+    background-color: #ffffff;
+
+    font-size: $font-size;
+    line-height: 14px;
+  }
+
+  .example__costs {
+    width: 180px;
+
+    text-align: right;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
