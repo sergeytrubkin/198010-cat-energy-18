@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--inner {
+    background-color: #f2f2f2;
+  }
 }
 
 .contacts__container {
