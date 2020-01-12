@@ -19,10 +19,18 @@
   color: $text-color-heading;
 }
 
+.field-text__list {
+  @include list-style-none();
+}
+
 .field-text__item {
+  margin-bottom: 15px;
+}
+
+.field-text__item label {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  width: 100%;
 }
 
 .field-text__text {
@@ -30,6 +38,10 @@
 
   color: #222222;
   text-transform: uppercase;
+}
+
+.field-text__input {
+  flex-grow: 1;
 }
 
 .field-text__textarea {
@@ -74,6 +86,10 @@
     margin: 0 40px;
   }
 
+  .field-text__item label {
+    width: 100%;
+  }
+
   .field-text__title {
     font-size: $font-size-heading;
     line-height: 36px;
@@ -87,5 +103,55 @@
   .field-text__input {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .field-text__fieldset {
+    margin: 0;
+  }
+
+  .field-text__list {
+    display: flex;
+  }
+
+  .field-text__item {
+    width: 570px;
+
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  .form__section {
+    & .field-text {
+      width: 570px;
+      padding-top: 0;
+      margin-right: 60px;
+    }
+
+    & .field-text__wrapper {
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+
+    & .field-text__fieldset {
+      margin: 0;
+    }
+
+    & .field-text__list {
+      flex-direction: column;
+    }
+
+    & .field-text__item:last-child {
+      margin-bottom: 0;
+    }
   }
 }

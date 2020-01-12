@@ -21,3 +21,22 @@
     line-height: $line-height-small;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form__section {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+
+    display: flex;
+  }
+
+  .form__submit-block {
+    padding: 0 40px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin-right: 80px;
+  }
+}

@@ -49,41 +49,60 @@
     </div>
     <!-- page-main__form -->
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="field-text">
-        <div class="field-text__wrapper">
-          <fieldset class="field-text__fieldset">
-            <label class="field-text__item">
-              <span class="field-text__text">Имя:<sup>*</sup></span>
-              <input class="field-text__input" type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="field-text__item">
-              <span class="field-text__text">Вес (кг):<sup>*</sup></span>
-              <input class="field-text__input" type="text" name="weight" placeholder="7" required>
-            </label>
-            <label class="field-text__item">
-              <span class="field-text__text">Возраст (лет):</span>
-              <input class="field-text__input" type="text" name="years" placeholder="7" required>
-            </label>
-          </fieldset>
-        </div>
-      </div>
 
-      <div class="field-radio">
-        <div class="field-radio__wrapper">
-          <fieldset class="field-radio__fieldset">
-            <label class="field-radio__item">
-              <input class="field-radio__input" type="radio" name="program" value="Похудение" checked>
-              <span class="field-radio__text">Похудение</span>
-            </label>
-            <label class="field-radio__item">
-              <input class="field-radio__input" type="radio" name="program" value="Набор массы">
-              <span class="field-radio__text">Набор массы</span>
-            </label>
-            <label class="field-radio__item">
-              <input class="field-radio__input" type="radio" name="program" value="Нужен совет">
-              <span class="field-radio__text">Не знаю(нужен ваш совет)</span>
-            </label>
-          </fieldset>
+      <div class="form__section">
+        <div class="field-text">
+          <div class="field-text__wrapper">
+            <fieldset class="field-text__fieldset">
+              <ul class="field-text__list">
+                <li class="field-text__item">
+                  <label class="field-text__item">
+                    <span class="field-text__text">Имя:<sup>*</sup></span>
+                    <input class="field-text__input" type="text" name="name" placeholder="Барсик" required>
+                  </label>
+                </li>
+                <li class="field-text__item">
+                  <label class="field-text__item">
+                    <span class="field-text__text">Вес (кг):<sup>*</sup></span>
+                    <input class="field-text__input" type="text" name="weight" placeholder="7" required>
+                  </label>
+                </li>
+                <li class="field-text__item">
+                  <label class="field-text__item">
+                    <span class="field-text__text">Возраст (лет):</span>
+                    <input class="field-text__input" type="text" name="years" placeholder="7" required>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="field-radio">
+          <div class="field-radio__wrapper">
+            <fieldset class="field-radio__fieldset">
+              <ul class="field-radio__list">
+                <li class="field-radio__item">
+                  <label>
+                    <input class="field-radio__input" type="radio" name="program" value="Похудение" checked>
+                    <span class="field-radio__text">Похудение</span>
+                  </label>
+                </li>
+                <li class="field-radio__item">
+                  <label>
+                    <input class="field-radio__input" type="radio" name="program" value="Набор массы">
+                    <span class="field-radio__text">Набор массы</span>
+                  </label>
+                </li>
+                <li class="field-radio__item">
+                  <label>
+                    <input class="field-radio__input" type="radio" name="program" value="Нужен совет">
+                    <span class="field-radio__text">Не знаю(нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </div>
       </div>
 
@@ -91,14 +110,20 @@
         <div class="field-text__wrapper">
           <fieldset class="field-text__fieldset">
             <legend class="field-text__title">Контактные данные (владельца кота)</legend>
-            <label class="field-text__item">
-              <span class="field-text__text">e-mail:<sup>*</sup></span>
-              <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="field-text__item">
-              <span class="field-text__text">Телефон:<sup>*</sup></span>
-              <input class="field-text__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <ul class="field-text__list">
+              <li class="field-text__item">
+                <label>
+                  <span class="field-text__text">e-mail:<sup>*</sup></span>
+                  <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+              <li class="field-text__item">
+                <label>
+                  <span class="field-text__text">Телефон:<sup>*</sup></span>
+                  <input class="field-text__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </div>
       </div>

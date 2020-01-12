@@ -9,9 +9,11 @@
 }
 
 .field-radio__fieldset {
-  display: flex;
-
   border: none;
+}
+
+.field-radio__list {
+  @include list-style-none();
 }
 
 .field-radio__text {
@@ -39,5 +41,33 @@
   .field-radio__text {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__section {
+    & .field-radio {
+      width: 570px;
+      padding-top: 0;
+    }
+
+    & .field-radio__wrapper {
+      width: auto;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    & .field-radio__fieldset {
+      margin: 0;
+      height: 100%;
+    }
+
+    & .field-radio__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
   }
 }
