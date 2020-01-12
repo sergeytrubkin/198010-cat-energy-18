@@ -95,7 +95,6 @@
             </div>
             <a href="#" class="catalog__button button">Заказать</a>
           </div>
-          </div>
         </li>
 
         <li class="catalog__item">
@@ -379,74 +378,100 @@
 
     <!-- other-products -->
     <section class="other-products">
-      <ul class="other-products__catalog catalog">
-        <li class="catalog__item">
-          <a href="#" class="catalog__link">
-            <h3 class="catalog__title">Сахарозаменитель</h3>
-          </a>
-          <table class="catalog__table">
-            <tr>
-              <td class="catalog__row">1 упаковка (100 г)</td>
-              <td class="catalog__row">200 Р.</td>
-            </tr>
-          </table>
-          <a href="#" class="catalog__button button">Заказать</a>
-        </li>
+      <div class="container">
+        <h2 class="other-products__heading">Дополнительные товары</h2>
+        <div class="other-products__wrapper">
+          <div class="other-products__catalog catalog">
+            <ul class="catalog__list catalog__list--other-products">
+              <li class="catalog__item catalog__item--other-products">
+                <div class="catalog__item-wrap">
+                  <a href="#" class="catalog__link">
+                    <h3 class="catalog__title catalog__title--other-products">Сахарозаменитель</h3>
+                  </a>
+                  <table class="catalog__table catalog__table--other-products">
+                    <tr>
+                      <td class="catalog__row">1 упаковка (100 г)</td>
+                      <td class="catalog__row">200 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="catalog__button catalog__button--other-products button">Заказать</a>
+                </div>
 
-        <li class="catalog__item">
-          <a href="#" class="catalog__link">
-            <h3 class="catalog__title">Питьевая вода</h3>
-          </a>
-          <table class="catalog__table">
-            <tr>
-              <td class="catalog__row">5 литров</td>
-              <td class="catalog__row">50 Р.</td>
-            </tr>
-          </table>
-          <a href="#" class="catalog__button button">Заказать</a>
-        </li>
+              </li>
 
-        <li class="catalog__item">
-          <a href="#" class="catalog__link">
-            <h3 class="catalog__title">Молоко</h3>
-          </a>
-          <table class="catalog__table">
-            <tr>
-              <td class="catalog__row">1 литр</td>
-              <td class="catalog__row">100 Р.</td>
-            </tr>
-          </table>
-          <a href="#" class="catalog__button button">Заказать</a>
-        </li>
+              <li class="catalog__item catalog__item--other-products">
+                <div class="catalog__item-wrap">
+                  <a href="#" class="catalog__link">
+                    <h3 class="catalog__title catalog__title--other-products">Питьевая вода</h3>
+                  </a>
+                  <table class="catalog__table catalog__table--other-products">
+                    <tr>
+                      <td class="catalog__row">5 литров</td>
+                      <td class="catalog__row">50 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="catalog__button catalog__button--other-products button">Заказать</a>
+                </div>
 
-        <li class="catalog__item">
-          <a href="#" class="catalog__link">
-            <h3 class="catalog__title">Витамины</h3>
-          </a>
-          <table class="catalog__table">
-            <tr>
-              <td class="catalog__row">1 упаковка (30 г)</td>
-              <td class="catalog__row">300 Р.</td>
-            </tr>
-          </table>
-          <a href="#" class="catalog__button button">Заказать</a>
-        </li>
-      </ul>
+              </li>
+
+              <li class="catalog__item catalog__item--other-products">
+                <div class="catalog__item-wrap">
+                  <a href="#" class="catalog__link">
+                    <h3 class="catalog__title catalog__title--other-products">Молоко</h3>
+                  </a>
+                  <table class="catalog__table catalog__table--other-products">
+                    <tr>
+                      <td class="catalog__row">1 литр</td>
+                      <td class="catalog__row">100 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="catalog__button catalog__button--other-products button">Заказать</a>
+                </div>
+
+              </li>
+
+              <li class="catalog__item catalog__item--other-products">
+                <div class="catalog__item-wrap">
+                  <a href="#" class="catalog__link">
+                    <h3 class="catalog__title catalog__title--other-products">Витамины</h3>
+                  </a>
+                  <table class="catalog__table catalog__table--other-products">
+                    <tr>
+                      <td class="catalog__row">1 упаковка (30 г)</td>
+                      <td class="catalog__row">300 Р.</td>
+                    </tr>
+                  </table>
+                  <a href="#" class="catalog__button catalog__button--other-products button">Заказать</a>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+
+          <!-- stock -->
+          <div class="stock">
+            <h3 class="visually-hidden">Акция</h3>
+            <p class="stock__text">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+          </div>
+          <!-- stock end -->
+        </div>
+
+      </div>
+
     </section>
     <!-- other-products end -->
 
-    <!-- stock -->
-    <section class="stock">
-      <h3 class="visually-hidden">Акция</h3>
-      <p class="stock__text">Закажите все и получите чехол для кота в подарок!</p>
-    </section>
-    <!-- stock end -->
-
     <!-- contacts -->
-    <section class="contacts">
-      <h3 class="visually-hidden">Наши контакты</h3>
-      <p class="contacts__heading">Приглашаем к сотрудничеству дилеров!</p>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts contacts--inner">
+      <div class="contacts__wrapper">
+        <h3 class="visually-hidden">Наши контакты</h3>
+        <div class="contacts__container container">
+          <p class="contacts__heading">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span> </p>
+        </div>
+      </div>
+
       <iframe class="contacts__map" src="https://yandex.by/map-widget/v1/-/CBF9nKAJWA" width="560"
         height="400"></iframe>
     </section>

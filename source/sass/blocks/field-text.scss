@@ -1,0 +1,153 @@
+.field-text {
+  padding-top: 30px;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.field-text__fieldset {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+}
+
+.field-text__title {
+  margin-bottom: 30px;
+
+  font-size: $font-size-big;
+  line-height: 24px;
+  color: $text-color-heading;
+}
+
+.field-text__list {
+  @include list-style-none();
+}
+
+.field-text__item {
+  margin-bottom: 15px;
+}
+
+.field-text__item label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.field-text__text {
+  margin-right: 15px;
+
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.field-text__textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  margin: 0;
+
+  border: 1px solid $border-color;
+}
+
+.field-text__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.field-text__input {
+  padding: 15px;
+  flex-grow: 1;
+
+  text-transform: uppercase;
+  font-size: $font-size-medium;
+  line-height: $line-height;
+  color: $text-color;
+
+  border: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    border: none;
+  }
+
+  .field-text__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .field-text__fieldset {
+    margin: 0 40px;
+  }
+
+  .field-text__item label {
+    width: 100%;
+  }
+
+  .field-text__title {
+    font-size: $font-size-heading;
+    line-height: 36px;
+  }
+
+  .field-text__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-text__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .field-text__fieldset {
+    margin: 0;
+  }
+
+  .field-text__list {
+    display: flex;
+  }
+
+  .field-text__item {
+    width: 570px;
+
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  .form__section {
+    & .field-text {
+      width: 570px;
+      padding-top: 0;
+      margin-right: 60px;
+    }
+
+    & .field-text__wrapper {
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+
+    & .field-text__fieldset {
+      margin: 0;
+    }
+
+    & .field-text__list {
+      flex-direction: column;
+    }
+
+    & .field-text__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -8,9 +8,15 @@
   margin-top: 15px;
   margin-bottom: 28px;
 
+  color: $text-color-heading;
   font-weight: $font-weight-regular;
   font-size: $font-size-heading;
   line-height: $line-height-big;
+}
+
+.page-main__text {
+  text-transform: uppercase;
+  color: #111111;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +30,11 @@
     margin-top: 30px;
 
     font-size: $font-size-heading-big;
+  }
+
+  .page-main__text {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

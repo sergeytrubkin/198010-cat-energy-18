@@ -122,69 +122,84 @@
 
     <!-- example -->
     <section class="example">
-      <div class="example__container container">
-        <h2 class="example__heading">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов
-          в день. </p>
-        <div class="example__block">
-          <p class="example__result">5 кг <span class="example__description">Снижение веса</span> </p>
-          <p class="example__time">60 дней <span class="example__description">Затрачено времени</span></p>
-        </div>
-        <p class="example__costs">Затраты на питание: 15 000 руб.</p>
-        <div class="example__demo slider">
-          <ul class="example__list slider__list">
-            <li class="example__item slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)"
-                  srcset="img/webP/before-desktop@1x.webp 1x, img/webP/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/webP/before-tablet@1x.webp 1x, img/webP/before-tablet@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/webP/before-mobile@1x.webp 1x, img/webP/before-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240"
-                  alt="До диеты">
-              </picture>
-            </li>
-            <li class="example__item slider__item">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)"
-                  srcset="img/webP/after-desktop@1x.webp 1x, img/webP/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/webP/after-tablet@1x.webp 1x, img/webP/after-tablet@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/webP/after-mobile@1x.webp 1x, img/webP/after-mobile@2x.webp 2x">
-
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240"
-                  alt="После диеты">
-              </picture>
-            </li>
-          </ul>
-          <div class="example__toggle slider__toggle">
-            <button class="example__before">Было</button>
-            <div class="example__scale"></div>
-            <button class="example__after">Стало</button>
+      <div class="example__wrapper">
+        <div class="example__container">
+          <h2 class="example__heading">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+            16 часов
+            в день. </p>
+          <div class="example__wrapper-block">
+            <div class="example__block">
+              <p class="example__result">5 кг <span class="example__description">Снижение веса</span> </p>
+              <p class="example__time">60 дней <span class="example__description">Затрачено времени</span></p>
+            </div>
+            <p class="example__costs">Затраты на питание: 15 000 руб.</p>
           </div>
         </div>
+        <div class="example__demo slider">
+          <div class="example__demo-block">
+            <ul class="example__list slider__list">
+              <li class="example__item slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/webP/before-desktop@1x.webp 1x, img/webP/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webP/before-tablet@1x.webp 1x, img/webP/before-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/webP/before-mobile@1x.webp 1x, img/webP/before-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)"
+                    srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240"
+                    alt="До диеты">
+                </picture>
+              </li>
+              <li class="example__item slider__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/webP/after-desktop@1x.webp 1x, img/webP/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/webP/after-tablet@1x.webp 1x, img/webP/after-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="img/webP/after-mobile@1x.webp 1x, img/webP/after-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240"
+                    alt="После диеты">
+                </picture>
+              </li>
+            </ul>
+            <div class="example__toggle slider__toggle">
+              <button class="example__button example__before">Было</button>
+              <div class="example__range">
+                <div class="example__scale"></div>
+              </div>
+              <button class="example__button example__after">Стало</button>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+
 
     </section>
     <!-- example end -->
 
     <!-- contacts -->
-    <section class="contacts">
-      <h3 class="visually-hidden">Наши контакты</h3>
-      <div class="contacts__container container">
-        <p class="contacts__heading">Приглашаем<br> к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="contacts contacts">
+      <div class="contacts__wrapper">
+        <h3 class="visually-hidden">Наши контакты</h3>
+        <div class="contacts__container container">
+          <p class="contacts__heading">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span> </p>
+        </div>
       </div>
+
       <iframe class="contacts__map" src="https://yandex.by/map-widget/v1/-/CBF9nKAJWA" width="560"
         height="400"></iframe>
     </section>

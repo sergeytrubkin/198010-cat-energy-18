@@ -1,0 +1,82 @@
+.field-checkbox__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.field-checkbox__fieldset {
+  padding: 0;
+
+  border: none;
+}
+
+.field-checkbox__title {
+  margin-bottom: 30px;
+
+  font-size: $font-size-big;
+  line-height: 24px;
+}
+
+.field-checkbox__list {
+  @include list-style-none();
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .field-checkbox__title {
+    font-size: $font-size-heading;
+    line-height: 36px;
+  }
+
+  .field-checkbox__fieldset {
+    margin: 0 40px;
+  }
+
+  .field-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .field-checkbox__item {
+    width: 284px;
+
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
+  }
+
+  .field-checkbox__text {
+    font-size: 20px;
+    line-height: $line-height-medium;
+  }
+
+  .field-checkbox__input {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .field-checkbox__fieldset {
+    margin: 0;
+  }
+
+  .field-checkbox__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

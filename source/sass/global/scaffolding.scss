@@ -62,4 +62,11 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: $text-color-white;
   background-color: $accent-color;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
