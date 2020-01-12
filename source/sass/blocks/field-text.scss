@@ -1,4 +1,6 @@
 .field-text {
+  padding-top: 30px;
+
   border-bottom: 1px solid #ededed;
 }
 
@@ -7,6 +9,14 @@
   margin: 0;
 
   border: none;
+}
+
+.field-text__title {
+  margin-bottom: 30px;
+
+  font-size: $font-size-big;
+  line-height: 24px;
+  color: $text-color-heading;
 }
 
 .field-text__item {
@@ -27,6 +37,8 @@
   min-height: 150px;
   padding: 15px;
   margin: 0;
+
+  border: 1px solid $border-color;
 }
 
 .field-text__wrapper {
@@ -42,7 +54,38 @@
   text-transform: uppercase;
   font-size: $font-size-medium;
   line-height: $line-height;
-  color: #444444;
+  color: $text-color;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid $border-color;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    border: none;
+  }
+
+  .field-text__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .field-text__fieldset {
+    margin: 0 40px;
+  }
+
+  .field-text__title {
+    font-size: $font-size-heading;
+    line-height: 36px;
+  }
+
+  .field-text__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-text__input {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

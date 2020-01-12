@@ -30,6 +30,11 @@
 
     font-size: $font-size-heading-big;
   }
+
+  .page-main__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {

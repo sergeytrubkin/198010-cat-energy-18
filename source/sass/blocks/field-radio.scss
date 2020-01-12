@@ -13,3 +13,31 @@
 
   border: none;
 }
+
+.field-radio__text {
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .field-radio {
+    border: none;
+  }
+
+  .field-radio__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .field-radio__fieldset {
+    padding: 20px;
+    margin: 0 40px;
+
+    border: 1px solid $border-color;
+  }
+
+  .field-radio__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

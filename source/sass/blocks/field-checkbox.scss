@@ -5,6 +5,47 @@
 }
 
 .field-checkbox__fieldset {
-  display: flex;
+  padding: 0;
+
   border: none;
+}
+
+.field-checkbox__title {
+  margin-bottom: 30px;
+
+  font-size: $font-size-big;
+  line-height: 24px;
+}
+
+.field-checkbox__list {
+  @include list-style-none();
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .field-checkbox__fieldset {
+    margin: 0 40px;
+  }
+
+  .field-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .field-checkbox__item {
+    width: 284px;
+
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
+  }
+
+  .field-checkbox__input {
+    width: auto;
+  }
 }
