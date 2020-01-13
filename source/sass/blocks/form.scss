@@ -1,6 +1,22 @@
 .form__submit-block {
   display: flex;
   flex-direction: column;
+
+  padding-bottom: 32px;
+}
+
+.form__button {
+  margin-bottom: 20px;
+}
+
+.form__submit-block small {
+  margin: 0 auto;
+}
+
+.form__submit-block small,
+.form__submit-block sup {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size;
 }
 
 @media (min-width: $tablet-width) {
