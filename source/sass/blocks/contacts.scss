@@ -35,6 +35,8 @@
 @media (min-width: $tablet-width) {
   .contacts__container {
     justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 40px;
   }
 
   .contacts__heading {

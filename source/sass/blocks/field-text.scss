@@ -73,7 +73,14 @@
 
 @media (min-width: $tablet-width) {
   .field-text {
-    border: none;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    &__comment {
+      padding-top: 17px;
+      margin-bottom: 55px;
+    }
   }
 
   .field-text__wrapper {
@@ -83,7 +90,8 @@
   }
 
   .field-text__fieldset {
-    margin: 0 40px;
+    margin-left: 40px;
+    margin-right: 35px;
   }
 
   .field-text__item label {
@@ -91,16 +99,50 @@
   }
 
   .field-text__title {
+    position: relative;
+    margin-bottom: 75px;
+
     font-size: $font-size-heading;
     line-height: 36px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 2000px;
+      top: 24px;
+      left: -2040px;
+
+      background-color: $accent-color;
+    }
+
+    &::after {
+      left: auto;
+      right: -2040px;
+    }
+  }
+
+  .field-text__textarea {
+    padding: 13px 18px;
+    min-height: 175px;
   }
 
   .field-text__text {
+    margin-right: 20px;
+
     font-size: 20px;
     line-height: 20px;
+
+    &--indent {
+      margin-right: 15px;
+    }
   }
 
   .field-text__input {
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 5px;
+
     font-size: 20px;
     line-height: 20px;
   }

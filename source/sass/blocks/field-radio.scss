@@ -72,6 +72,8 @@
 
 @media (min-width: $tablet-width) {
   .field-radio {
+    margin-bottom: 50px;
+
     border: none;
   }
 
@@ -82,17 +84,35 @@
   }
 
   .field-radio__fieldset {
-    padding: 20px;
+    padding: 30px 28px;
     margin: 0 40px;
 
     border: 1px solid $border-color;
   }
 
+  .field-radio__item {
+    margin-bottom: 33px;
+  }
+
   .field-radio__text {
+    padding-left: 60px;
+
     font-size: 20px;
     line-height: 20px;
 
     cursor: pointer;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .field-radio__input:checked + .field-radio__text::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 11px;
   }
 }
 
