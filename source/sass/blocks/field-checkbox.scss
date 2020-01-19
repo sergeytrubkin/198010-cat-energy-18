@@ -1,5 +1,7 @@
 .field-checkbox {
   margin-bottom: 17px;
+
+  overflow: hidden;
 }
 
 .field-checkbox__wrapper {
@@ -10,15 +12,34 @@
 
 .field-checkbox__fieldset {
   padding: 0;
+  margin: 0;
 
   border: none;
 }
 
 .field-checkbox__title {
+  position: relative;
   margin-bottom: 40px;
 
   font-size: $font-size-big;
   line-height: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 2000px;
+    top: 14px;
+    left: -2024px;
+
+    background-color: $accent-color;
+  }
+
+  &::after {
+    left: auto;
+    right: -2024px;
+  }
 }
 
 .field-checkbox__list {
@@ -69,8 +90,6 @@
 @media (min-width: $tablet-width) {
   .field-checkbox {
     margin-bottom: 13px;
-
-    overflow: hidden;
   }
 
   .field-checkbox__wrapper {
@@ -80,28 +99,10 @@
   }
 
   .field-checkbox__title {
-    position: relative;
     margin-bottom: 65px;
 
     font-size: $font-size-heading;
     line-height: 36px;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      height: 3px;
-      width: 2000px;
-      top: 24px;
-      left: -2040px;
-
-      background-color: $accent-color;
-    }
-
-    &::after {
-      left: auto;
-      right: -2040px;
-    }
   }
 
   .field-checkbox__fieldset {
@@ -147,6 +148,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .field-checkbox {
+    margin-bottom: 20px;
+  }
+
   .field-checkbox__wrapper {
     width: 1300px;
     padding: 0 40px;
@@ -160,6 +165,10 @@
   .field-checkbox__item {
     width: 245px;
     margin-right: 80px;
+
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
 
     &:last-child {
       margin-right: 0;

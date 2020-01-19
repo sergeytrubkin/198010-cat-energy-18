@@ -59,13 +59,16 @@
 
 .promo__img {
   margin-top: -150px;
-  margin-bottom: 2px;
 }
 
 .promo__button {
   @include link-style();
 
   width: 280px;
+  padding: 11px 10px;
+
+  font-size: $font-size;
+  line-height: $line-height;
   color: $text-color-white;
 }
 
@@ -174,7 +177,7 @@
 
   .promo__img {
     position: absolute;
-    left: 38%;
+    left: 490px;
     top: 0;
     width: 552px;
     height: 499px;
@@ -183,6 +186,8 @@
 
   .promo__button {
     position: static;
+    min-width: 245px;
+    padding: 15px;
     margin-left: 80px;
   }
 }

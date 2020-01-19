@@ -19,6 +19,9 @@
 
   &--other-products {
     min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
     border-color: #cdcdcd;
 
     &:first-child {
@@ -52,7 +55,7 @@
 .catalog__inner-wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .catalog__link {
@@ -99,7 +102,7 @@
   line-height: $line-height-small;
 
   &--other-products {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
@@ -112,6 +115,10 @@
 
 .catalog__table--other-products tr {
   width: 100%;
+}
+
+.catalog__table--other-products td {
+  font-size: $font-size;
 }
 
 .catalog__button {
@@ -141,7 +148,7 @@
 
 .catalog__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-family: "Arial", sans-serif;
   font-size: $font-size-small;

@@ -10,11 +10,13 @@
 
 .product-description__list {
   @include list-style-none();
+
+  margin-bottom: 45px;
 }
 
 .product-description__item {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   &::before {
     content: "";

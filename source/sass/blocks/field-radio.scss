@@ -121,6 +121,7 @@
     & .field-radio {
       width: 570px;
       padding-top: 0;
+      margin-bottom: 0;
     }
 
     & .field-radio__wrapper {
@@ -133,6 +134,7 @@
     & .field-radio__fieldset {
       margin: 0;
       height: 100%;
+      padding-top: 35px;
     }
 
     & .field-radio__list {

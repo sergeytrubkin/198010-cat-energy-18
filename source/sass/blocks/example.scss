@@ -1,15 +1,18 @@
 .example {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #f2f2f2;
 }
 
-.example__wrapper {
+.example__container {
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .example__heading {
+  margin-top: 5px;
+  margin-bottom: 25px;
+
   line-height: $line-height-big;
   color: #111111;
   font-size: $font-size-heading;
@@ -17,6 +20,9 @@
 }
 
 .example__text {
+  padding-right: 5px;
+  margin-bottom: 2px;
+
   font-family: "Arial", sans-serif;
 }
 
@@ -32,6 +38,7 @@
   padding-bottom: 15px;
   min-width: 125px;
 
+  text-transform: uppercase;
   text-align: center;
   font-size: $font-size-big;
   line-height: 24px;
@@ -50,19 +57,29 @@
 
   background-color: #f2f2f2;
 
+  font-family: "Arial", sans-serif;
   text-transform: lowercase;
   font-size: $font-size-small;
   line-height: 12px;
 }
 
 .example__costs {
+  margin-top: 10px;
+  margin-bottom: 35px;
+
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
 }
 
+.example__demo-block {
+  margin-bottom: 25px;
+}
+
 .example__list {
   @include list-style-none();
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -74,6 +91,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .example__button {
@@ -90,7 +110,7 @@
   position: relative;
   width: 30%;
   height: 14px;
-  margin: 0 17px;
+  margin: 0 12px;
 
   background-color: #ffffff;
 
