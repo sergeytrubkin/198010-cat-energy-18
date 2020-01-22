@@ -58,10 +58,10 @@
     &::before {
       width: 55px;
       height: 60px;
-      top: 50%;
+      top: -10%;
       left: -330px;
 
-      transform: translateY(-50%);
+      transform: translateX(0);
     }
   }
 }

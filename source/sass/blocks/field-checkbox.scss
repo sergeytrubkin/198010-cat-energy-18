@@ -103,6 +103,16 @@
 
     font-size: $font-size-heading;
     line-height: 36px;
+
+    &::after {
+      top: 20px;
+      right: -2040px;
+    }
+
+    &::before {
+      top: 20px;
+      left: -2040px;
+    }
   }
 
   .field-checkbox__fieldset {
@@ -124,7 +134,7 @@
   }
 
   .field-checkbox__text {
-    padding-left: 60px;
+    padding-left: 58px;
 
     font-size: 20px;
     line-height: $line-height-medium;

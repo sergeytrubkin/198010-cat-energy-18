@@ -1,5 +1,5 @@
 .field-text {
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   overflow: hidden;
 
@@ -51,6 +51,7 @@
 }
 
 .field-text__item label {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -66,6 +67,17 @@
 
 .field-text__contacts .field-text__text {
   margin-right: 10px;
+}
+
+.field-text__icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--phone {
+    right: 13px;
+  }
 }
 
 .field-text__textarea {
@@ -103,7 +115,7 @@
 
     &__comment {
       padding-top: 17px;
-      margin-bottom: 55px;
+      margin-bottom: 45px;
     }
   }
 
@@ -129,13 +141,17 @@
     font-size: $font-size-heading;
     line-height: 36px;
 
+    & br {
+      display: none;
+    }
+
     &::before,
     &::after {
       content: "";
       position: absolute;
       height: 3px;
       width: 2000px;
-      top: 24px;
+      top: 20px;
       left: -2040px;
 
       background-color: $accent-color;
@@ -147,6 +163,10 @@
     }
   }
 
+  .field-text__contacts .field-text__title {
+    margin-bottom: 77px;
+  }
+
   .field-text__textarea {
     padding: 13px 18px;
     min-height: 175px;
@@ -154,9 +174,14 @@
 
   .field-text__text {
     margin-right: 20px;
+    margin-bottom: 7px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .field-text__contacts .field-text__text {
+    margin-right: 20px;
 
     &--indent {
       margin-right: 15px;
@@ -164,11 +189,24 @@
   }
 
   .field-text__input {
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 15px;
     margin-bottom: 5px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .field-text__contacts .field-text__input {
+    padding-left: 20px;
+    padding-right: 50px;
+  }
+
+  .field-text__icon {
+    right: 21px;
+
+    &--phone {
+      right: 18px;
+    }
   }
 }
 

@@ -16,7 +16,7 @@
 
 .product-description__item {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
@@ -77,6 +77,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-description {
+    border-bottom: 1px solid $border-color;
+  }
+
   .product-description__heading {
     margin-bottom: 70px;
 
@@ -87,6 +91,7 @@
   .product-description__list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 58px;
   }
 
   .product-description__item {
@@ -97,6 +102,10 @@
 
     &:nth-child(odd) {
       margin-right: 60px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
 
     &::before {

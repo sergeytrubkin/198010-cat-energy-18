@@ -38,9 +38,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .other-products {
+    padding-bottom: 75px;
+  }
+
   .other-products__heading {
     padding-left: 35px;
     padding-right: 35px;
+    margin-bottom: 77px;
 
     font-size: $font-size-heading;
     line-height: 36px;

@@ -159,6 +159,7 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
+    padding-bottom: 35px;
   }
 
   .catalog__list {
@@ -171,9 +172,10 @@
     border: none;
     width: 324px;
     padding: 0;
-    padding-top: 120px;
+    padding-top: 123px;
     padding-bottom: 40px;
-    margin-top: 140px;
+    margin-top: 139px;
+    margin-bottom: 5px;
 
     background-color: #f2f2f2;
 
@@ -184,23 +186,19 @@
     &:nth-child(odd) {
       margin-right: 60px;
     }
+  }
 
-    &--other-products {
-      width: 100%;
-      margin: 0;
-      padding: 0;
+  .catalog__item--other-products {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-      background-color: #ffffff;
+    background-color: #ffffff;
 
+    &:nth-child(odd) {
+      margin-right: 0;
+      border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
-
-      &:first-child {
-        border-color: #d9d9d9;
-      }
-
-      &:nth-child(odd) {
-        margin-right: 0;
-      }
     }
   }
 
@@ -208,7 +206,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 35px;
+    padding: 28px 38px;
+  }
+
+  .catalog__item--other-products:nth-child(odd) .catalog__item-wrap {
+    padding: 27px 38px;
   }
 
   .catalog__wrapper {
@@ -233,10 +235,14 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &--other-products {
+      padding: 0;
+    }
   }
 
   .catalog__title--other-products {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .catalog__title br {
@@ -249,7 +255,7 @@
 
     &--img {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 37px;
     }
   }
 
@@ -270,6 +276,7 @@
 
     &--other-products {
       width: auto;
+      margin-top: 3px;
       margin-bottom: 0;
     }
   }
@@ -289,7 +296,13 @@
   }
 
   .catalog__table--other-products td {
-    margin-left: 30px;
+    text-align: right;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+
+    &:last-child {
+      width: 95px;
+    }
   }
 
   .catalog__button {
@@ -312,22 +325,25 @@
 
   .catalog__wrapper--all {
     width: 250px;
+    height: 100%;
     margin: 0 auto;
   }
 
   .catalog__title--all {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     padding: 0 40px;
   }
 
   .catalog__text {
     padding: 0 20px;
-    margin-bottom: 85px;
+    margin-bottom: 10px;
 
     font-size: 16px;
   }
 
   .catalog__button--all {
+    margin-top: auto;
+
     &::before {
       width: 60px;
       height: 60px;

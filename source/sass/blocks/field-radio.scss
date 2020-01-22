@@ -1,6 +1,6 @@
 .field-radio {
   padding: 26px 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -72,7 +72,8 @@
 
 @media (min-width: $tablet-width) {
   .field-radio {
-    margin-bottom: 50px;
+    padding: 22px 0;
+    margin-bottom: 53px;
 
     border: none;
   }
@@ -84,14 +85,14 @@
   }
 
   .field-radio__fieldset {
-    padding: 30px 28px;
+    padding: 33px 28px;
     margin: 0 40px;
 
     border: 1px solid $border-color;
   }
 
   .field-radio__item {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .field-radio__text {
