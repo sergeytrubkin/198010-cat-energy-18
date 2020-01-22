@@ -211,6 +211,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .field-text__comment {
+    margin-bottom: 50px;
+  }
+
   .field-text__wrapper {
     width: 1300px;
     padding: 0 40px;

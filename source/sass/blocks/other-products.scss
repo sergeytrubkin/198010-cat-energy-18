@@ -78,8 +78,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .other-products {
+    padding-top: 43px;
+    padding-bottom: 85px;
+  }
+
   .other-products__wrapper {
     display: flex;
+  }
+
+  .other-products__heading {
+    padding-left: 0;
+    margin-bottom: 80px;
   }
 
   .other-products__catalog {

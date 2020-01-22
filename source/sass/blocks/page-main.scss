@@ -53,8 +53,12 @@
 
 @media (min-width: $desktop-width) {
   .page-main__heading {
-    margin-top: 20px;
+    margin-top: 26px;
     margin-bottom: 28px;
+
+    &--programs {
+      margin-top: 21px;
+    }
   }
 
   .page-main__text {
