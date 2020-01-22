@@ -10,6 +10,8 @@
 
 .contacts__container {
   display: flex;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 .contacts__heading {
@@ -35,6 +37,8 @@
 @media (min-width: $tablet-width) {
   .contacts__container {
     justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 40px;
   }
 
   .contacts__heading {
@@ -71,15 +75,17 @@
   .contacts__container {
     position: absolute;
     width: auto;
-    left: 0;
-    top: 95px;
-    padding: 60px 70px;
+    left: 40px;
+    top: 100px;
+    padding: 40px;
+    padding-top: 42px;
+    padding-left: 35px;
 
     background-color: #ffffff;
   }
 
   .contacts__heading {
-    margin-right: 75px;
+    margin-right: 90px;
   }
 
   .contacts__address {

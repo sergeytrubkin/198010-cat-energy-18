@@ -1,15 +1,18 @@
 .example {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: #f2f2f2;
 }
 
-.example__wrapper {
+.example__container {
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 .example__heading {
+  margin-top: 5px;
+  margin-bottom: 25px;
+
   line-height: $line-height-big;
   color: #111111;
   font-size: $font-size-heading;
@@ -17,6 +20,9 @@
 }
 
 .example__text {
+  padding-right: 5px;
+  margin-bottom: 0;
+
   font-family: "Arial", sans-serif;
 }
 
@@ -32,6 +38,7 @@
   padding-bottom: 15px;
   min-width: 125px;
 
+  text-transform: uppercase;
   text-align: center;
   font-size: $font-size-big;
   line-height: 24px;
@@ -42,28 +49,38 @@
 
 .example__description {
   position: absolute;
-  bottom: -15px;
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: auto;
   padding: 0 10px;
 
   background-color: #f2f2f2;
 
+  font-family: "Arial", sans-serif;
   text-transform: lowercase;
   font-size: $font-size-small;
   line-height: 12px;
 }
 
 .example__costs {
+  margin-top: 10px;
+  margin-bottom: 35px;
+
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
 }
 
+.example__demo-block {
+  margin-bottom: 25px;
+}
+
 .example__list {
   @include list-style-none();
-  margin-bottom: 30px;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .example__item:last-child {
@@ -74,6 +91,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .example__button {
@@ -86,11 +106,15 @@
   border: 0;
 }
 
+.example__before {
+  margin-left: 5px;
+}
+
 .example__range {
   position: relative;
   width: 30%;
   height: 14px;
-  margin: 0 17px;
+  margin: 0 12px;
 
   background-color: #ffffff;
 
@@ -125,16 +149,20 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
-    padding-bottom: 240px;
+    padding-bottom: 225px;
   }
 
   .example__heading {
+    margin-top: 43px;
+    margin-bottom: 65px;
+
     font-size: $font-size-heading-big;
     line-height: $line-height-big;
   }
 
   .example__text {
     padding-right: 10px;
+    margin-bottom: 22px;
 
     font-size: $font-size-medium;
     line-height: 24px;
@@ -147,20 +175,22 @@
   }
 
   .example__block {
-    width: 50%;
+    width: 366px;
   }
 
   .example__result,
   .example__time {
     width: 162px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
+    padding-top: 20px;
 
     font-size: 30px;
   }
 
   .example__description {
-    min-width: 80%;
+    width: 70%;
     bottom: 0;
+    padding: 0 5px;
     transform: translateX(-50%) translateY(50%);
 
     background-color: #ffffff;
@@ -169,16 +199,28 @@
     line-height: 14px;
   }
 
+  .example__time .example__description {
+    width: 90%;
+  }
+
   .example__costs {
     width: 180px;
+    margin-top: 33px;
 
     text-align: right;
     font-size: 20px;
     line-height: 20px;
   }
 
+  .example__price {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+  }
+
   .example__demo {
-    padding-bottom: 30px;
+    padding-bottom: 68px;
+
     background-color: #eaeaea;
   }
 
@@ -188,8 +230,13 @@
     margin: 0 auto;
   }
 
+  .example__list {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
   .example__item {
-    text-align: center;
+    text-align: right;
   }
 
   .example__item img {
@@ -199,11 +246,15 @@
     margin-top: -170px;
   }
 
+  .example__toggle {
+    width: 100%;
+  }
+
   .example__range {
     position: relative;
-    width: 56%;
+    width: 64%;
     height: 6px;
-    margin: 0 17px;
+    margin: 0 22px;
 
     background-color: #dcdcdc;
 
@@ -215,7 +266,7 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    left: 50%;
+    left: 47%;
     top: 50%;
     transform: translateY(-50%);
 
@@ -242,13 +293,20 @@
 
   .example__button {
     padding: 5px 0;
+
+    font-size: 20px;
+
     border-bottom: 1px dotted #b8b8b8;
+  }
+
+  .example__before {
+    margin-left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    margin-top: 200px;
+    margin-top: 155px;
     background-color: #f2f2f2;
   }
 
@@ -264,13 +322,14 @@
     position: relative;
     width: auto;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 55px;
+    margin-right: 80px;
   }
 
   .example__heading {
     position: absolute;
     left: 0;
-    top: -150px;
+    top: -178px;
   }
 
   .example__wrapper-block {
@@ -278,8 +337,9 @@
     align-items: flex-start;
   }
 
-  .example__block {
-    width: auto;
+  .example__text {
+    padding-right: 15px;
+    margin-bottom: 38px;
   }
 
   .example__result,
@@ -297,13 +357,43 @@
 
   .example__costs {
     width: auto;
+    margin-top: 28px;
+  }
+
+  .example__price {
+    margin-top: 0;
+    margin-left: 60px;
+    vertical-align: top;
   }
 
   .example__demo {
     background-color: transparent;
   }
 
+  .example__demo-block {
+    width: 690px;
+    padding: 0;
+  }
+
+  .example__list {
+    margin-bottom: 32px;
+  }
+
+  .example__item img {
+    margin-top: -190px;
+    margin-left: 40px;
+  }
+
+  .example__toggle {
+    padding: 0;
+    justify-content: flex-end;
+  }
+
   .example__button {
     font-size: 20px;
+  }
+
+  .example__range {
+    width: 62%;
   }
 }

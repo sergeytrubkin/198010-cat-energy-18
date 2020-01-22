@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <!-- page-header -->
   <header class="page-header">
     <div class="page-header__wrapper">
@@ -44,7 +47,7 @@
   <!-- page-main -->
   <main class="page-main">
     <div class="container">
-      <h1 class="page-main__heading">Подбор программы</h1>
+      <h1 class="page-main__heading page-main__heading--programs">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету и мы подберем <br>программу питания для вашего кота</p>
     </div>
     <!-- page-main__form -->
@@ -57,13 +60,13 @@
               <ul class="field-text__list">
                 <li class="field-text__item">
                   <label class="field-text__item">
-                    <span class="field-text__text">Имя:<sup>*</sup></span>
+                    <span class="field-text__text">Имя:*</span>
                     <input class="field-text__input" type="text" name="name" placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="field-text__item">
                   <label class="field-text__item">
-                    <span class="field-text__text">Вес (кг):<sup>*</sup></span>
+                    <span class="field-text__text">Вес (кг):*</span>
                     <input class="field-text__input" type="text" name="weight" placeholder="7" required>
                   </label>
                 </li>
@@ -97,7 +100,7 @@
                 <li class="field-radio__item">
                   <label>
                     <input class="field-radio__input" type="radio" name="program" value="Нужен совет">
-                    <span class="field-radio__text">Не знаю(нужен ваш совет)</span>
+                    <span class="field-radio__text">Не знаю (нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -106,21 +109,27 @@
         </div>
       </div>
 
-      <div class="field-text">
+      <div class="field-text field-text__contacts">
         <div class="field-text__wrapper">
           <fieldset class="field-text__fieldset">
-            <legend class="field-text__title">Контактные данные (владельца кота)</legend>
+            <legend class="field-text__title">Контактные данные<br> (владельца кота)</legend>
             <ul class="field-text__list">
               <li class="field-text__item">
                 <label>
-                  <span class="field-text__text">e-mail:<sup>*</sup></span>
+                  <span class="field-text__text">e-mail:*</span>
                   <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <svg class="field-text__icon" width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </label>
               </li>
               <li class="field-text__item">
                 <label>
-                  <span class="field-text__text">Телефон:<sup>*</sup></span>
+                  <span class="field-text__text field-text__text--indent">Телефон:*</span>
                   <input class="field-text__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <svg class="field-text__icon field-text__icon--phone" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </label>
               </li>
             </ul>
@@ -128,7 +137,7 @@
         </div>
       </div>
 
-      <div class="field-text">
+      <div class="field-text field-text__comment">
         <div class="field-text__wrapper">
           <fieldset class="field-text__fieldset">
             <legend class="field-text__title">Комментарий</legend>
@@ -174,7 +183,7 @@
 
       <div class="form__submit-block container">
         <button class="form__button button" type="submit">Отправить заявку</button>
-        <small><sup>*</sup>— Обязательные поля</small>
+        <small>* — Обязательные поля</small>
       </div>
     </form>
     <!-- page-main__form end -->
@@ -213,7 +222,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--vk">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
               Кэт энерджи в Вконтакте
             </a>
@@ -221,7 +230,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--insta">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
               Кэт энерджи в Инстаграмм
             </a>
@@ -229,7 +238,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--fb">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
               Кэт энерджи в Фейсбук
             </a>
@@ -242,7 +251,7 @@
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <svg class="copyright__icon" width="45" height="40">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
           HTML Academy
         </a>

@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <!-- page-header -->
   <header class="page-header page-header__inner-page">
     <div class="page-header__wrapper">
@@ -42,7 +45,7 @@
   <!-- page-header end -->
 
   <!-- page-main -->
-  <main class="page-main">
+  <main class="page-main page-main__catalog">
     <div class="container">
       <h1 class="page-main__heading">Каталог продукции</h1>
     </div>
@@ -77,7 +80,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 500 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -122,7 +125,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 1000 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -166,7 +169,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 500 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -210,7 +213,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 1000 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -255,7 +258,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 500 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -300,7 +303,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 1000 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -344,7 +347,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 500 г</h3>
                 </a>
-                <table class="catalog__table">
+                <table class="catalog__table" cellspacing="0">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -388,7 +391,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Сахарозаменитель</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products">
+                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
                     <tr>
                       <td class="catalog__row">1 упаковка (100 г)</td>
                       <td class="catalog__row">200 Р.</td>
@@ -404,7 +407,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Питьевая вода</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products">
+                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
                     <tr>
                       <td class="catalog__row">5 литров</td>
                       <td class="catalog__row">50 Р.</td>
@@ -420,7 +423,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Молоко</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products">
+                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
                     <tr>
                       <td class="catalog__row">1 литр</td>
                       <td class="catalog__row">100 Р.</td>
@@ -436,7 +439,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Витамины</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products">
+                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
                     <tr>
                       <td class="catalog__row">1 упаковка (30 г)</td>
                       <td class="catalog__row">300 Р.</td>
@@ -456,7 +459,6 @@
           </div>
           <!-- stock end -->
         </div>
-
       </div>
 
     </section>
@@ -498,7 +500,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--vk">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
               Кэт энерджи в Вконтакте
             </a>
@@ -506,7 +508,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--insta">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
               Кэт энерджи в Инстаграмм
             </a>
@@ -514,7 +516,7 @@
           <li class="social__item">
             <a href="#" class="social__link social__link--fb">
               <svg>
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
               Кэт энерджи в Фейсбук
             </a>
@@ -527,7 +529,7 @@
       <div class="page-footer__copyright copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
           <svg class="copyright__icon" width="45" height="40">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
           HTML Academy
         </a>

@@ -19,6 +19,9 @@
 
   &--other-products {
     min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
     border-color: #cdcdcd;
 
     &:first-child {
@@ -52,7 +55,7 @@
 .catalog__inner-wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .catalog__link {
@@ -99,7 +102,7 @@
   line-height: $line-height-small;
 
   &--other-products {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 }
 
@@ -112,6 +115,10 @@
 
 .catalog__table--other-products tr {
   width: 100%;
+}
+
+.catalog__table--other-products td {
+  font-size: $font-size;
 }
 
 .catalog__button {
@@ -141,7 +148,7 @@
 
 .catalog__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-family: "Arial", sans-serif;
   font-size: $font-size-small;
@@ -152,6 +159,7 @@
     width: 768px;
     padding: 0 30px;
     margin: 0 auto;
+    padding-bottom: 35px;
   }
 
   .catalog__list {
@@ -164,9 +172,10 @@
     border: none;
     width: 324px;
     padding: 0;
-    padding-top: 120px;
+    padding-top: 123px;
     padding-bottom: 40px;
-    margin-top: 140px;
+    margin-top: 139px;
+    margin-bottom: 5px;
 
     background-color: #f2f2f2;
 
@@ -177,23 +186,19 @@
     &:nth-child(odd) {
       margin-right: 60px;
     }
+  }
 
-    &--other-products {
-      width: 100%;
-      margin: 0;
-      padding: 0;
+  .catalog__item--other-products {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-      background-color: #ffffff;
+    background-color: #ffffff;
 
+    &:nth-child(odd) {
+      margin-right: 0;
+      border-top: 1px solid #d9d9d9;
       border-bottom: 1px solid #d9d9d9;
-
-      &:first-child {
-        border-color: #d9d9d9;
-      }
-
-      &:nth-child(odd) {
-        margin-right: 0;
-      }
     }
   }
 
@@ -201,7 +206,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 35px;
+    padding: 28px 38px;
+  }
+
+  .catalog__item--other-products:nth-child(odd) .catalog__item-wrap {
+    padding: 27px 38px;
   }
 
   .catalog__wrapper {
@@ -229,7 +238,8 @@
   }
 
   .catalog__title--other-products {
-    margin-bottom: 30px;
+    padding: 0;
+    margin-bottom: 26px;
   }
 
   .catalog__title br {
@@ -242,7 +252,7 @@
 
     &--img {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 37px;
     }
   }
 
@@ -263,6 +273,7 @@
 
     &--other-products {
       width: auto;
+      margin-top: 3px;
       margin-bottom: 0;
     }
   }
@@ -282,7 +293,13 @@
   }
 
   .catalog__table--other-products td {
-    margin-left: 30px;
+    text-align: right;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+
+    &:last-child {
+      width: 95px;
+    }
   }
 
   .catalog__button {
@@ -305,22 +322,25 @@
 
   .catalog__wrapper--all {
     width: 250px;
+    height: 100%;
     margin: 0 auto;
   }
 
   .catalog__title--all {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     padding: 0 40px;
   }
 
   .catalog__text {
     padding: 0 20px;
-    margin-bottom: 85px;
+    margin-bottom: 10px;
 
     font-size: 16px;
   }
 
   .catalog__button--all {
+    margin-top: auto;
+
     &::before {
       width: 60px;
       height: 60px;
@@ -357,6 +377,10 @@
     }
   }
 
+  .catalog__inner-wrap {
+    margin-bottom: 18px;
+  }
+
   .catalog__item--other-products {
     width: auto;
     padding: 0;
@@ -369,12 +393,20 @@
     &:first-child {
       border-top: 1px solid #cdcdcd;
     }
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 
   .catalog__item-wrap {
     align-items: center;
     padding: 15px 0;
     margin: 0;
+  }
+
+  .catalog__item--other-products:nth-child(odd) .catalog__item-wrap {
+    padding: 16px 0;
   }
 
   .catalog__block-info {
@@ -384,7 +416,7 @@
 
   .catalog__title {
     padding: 0 10px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .catalog__title--other-products {
@@ -394,12 +426,20 @@
   }
 
   .catalog__table--other-products {
-    width: 285px;
+    width: 300px;
     margin-left: auto;
+    margin-top: 8px;
   }
 
   .catalog__table--other-products td {
     margin-left: 0;
+  }
+
+  .catalog__table--other-products td:last-child {
+    margin-left: 0;
+    width: 57px;
+
+    text-align: left;
   }
 
   .catalog__button {
@@ -409,11 +449,11 @@
   .catalog__button--other-products {
     width: 245px;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 25px;
   }
 
   .catalog__item--all {
-    padding-top: 165px;
+    padding-top: 162px;
   }
 
   .catalog__wrapper--all {

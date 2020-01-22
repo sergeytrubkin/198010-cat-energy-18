@@ -1,22 +1,42 @@
 .form__submit-block {
   display: flex;
   flex-direction: column;
+
+  padding-bottom: 32px;
+}
+
+.form__button {
+  margin-bottom: 20px;
+}
+
+.form__submit-block small {
+  margin: 0 auto;
+}
+
+.form__submit-block small,
+.form__submit-block sup {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size;
 }
 
 @media (min-width: $tablet-width) {
   .form__submit-block {
     padding: 0 70px;
+    padding-bottom: 72px;
     flex-direction: row;
     align-items: center;
   }
 
   .form__button {
     width: 283px;
+    padding: 16px 20px;
     margin-right: 60px;
+    margin-bottom: 0;
   }
 
-  .form__submit-block small,
-  .form__submit-block sup {
+  .form__submit-block small {
+    margin-left: 3px;
+
     font-size: $font-size-medium;
     line-height: $line-height-small;
   }
@@ -27,12 +47,14 @@
     width: 1300px;
     padding: 0 40px;
     margin: 0 auto;
+    margin-bottom: 45px;
 
     display: flex;
   }
 
   .form__submit-block {
     padding: 0 40px;
+    padding-bottom: 80px;
   }
 
   .form__button {

@@ -1,3 +1,9 @@
+.field-checkbox {
+  margin-bottom: 17px;
+
+  overflow: hidden;
+}
+
 .field-checkbox__wrapper {
   width: 320px;
   padding: 0 20px;
@@ -6,22 +12,86 @@
 
 .field-checkbox__fieldset {
   padding: 0;
+  margin: 0;
 
   border: none;
 }
 
 .field-checkbox__title {
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 40px;
 
   font-size: $font-size-big;
   line-height: 24px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 2000px;
+    top: 14px;
+    left: -2024px;
+
+    background-color: $accent-color;
+  }
+
+  &::after {
+    left: auto;
+    right: -2024px;
+  }
 }
 
 .field-checkbox__list {
   @include list-style-none();
 }
 
+.field-checkbox__item {
+  margin-bottom: 24px;
+}
+
+.field-checkbox__input {
+  display: none;
+}
+
+.field-checkbox__text {
+  position: relative;
+  padding-left: 45px;
+
+  font-size: $font-size-medium;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    border: 1px solid $border-color;
+  }
+}
+
+.field-checkbox__input:checked + .field-checkbox__text::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  left: 4px;
+  top: 4px;
+  transform: rotate(-45deg);
+
+  border-left: 2px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
+}
+
 @media (min-width: $tablet-width) {
+  .field-checkbox {
+    margin-bottom: 13px;
+  }
+
   .field-checkbox__wrapper {
     width: 768px;
     padding: 0 30px;
@@ -29,8 +99,20 @@
   }
 
   .field-checkbox__title {
+    margin-bottom: 65px;
+
     font-size: $font-size-heading;
     line-height: 36px;
+
+    &::after {
+      top: 20px;
+      right: -2040px;
+    }
+
+    &::before {
+      top: 20px;
+      left: -2040px;
+    }
   }
 
   .field-checkbox__fieldset {
@@ -44,6 +126,7 @@
 
   .field-checkbox__item {
     width: 284px;
+    margin-bottom: 50px;
 
     &:nth-child(odd) {
       margin-right: 60px;
@@ -51,8 +134,22 @@
   }
 
   .field-checkbox__text {
+    padding-left: 58px;
+
     font-size: 20px;
     line-height: $line-height-medium;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .field-checkbox__input:checked + .field-checkbox__text::after {
+    content: "";
+    left: 10px;
+    top: 7px;
   }
 
   .field-checkbox__input {
@@ -61,6 +158,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .field-checkbox {
+    margin-bottom: 20px;
+  }
+
   .field-checkbox__wrapper {
     width: 1300px;
     padding: 0 40px;
@@ -74,6 +175,10 @@
   .field-checkbox__item {
     width: 245px;
     margin-right: 80px;
+
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
 
     &:last-child {
       margin-right: 0;
