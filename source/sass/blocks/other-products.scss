@@ -89,7 +89,26 @@
 
   .other-products__heading {
     padding-left: 0;
+    padding-right: 0;
     margin-bottom: 80px;
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 2000px;
+      top: 20px;
+      left: -2040px;
+
+      background-color: $accent-color;
+    }
+
+    &::after {
+      left: auto;
+      right: -2040px;
+    }
   }
 
   .other-products__catalog {
