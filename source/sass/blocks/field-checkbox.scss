@@ -72,6 +72,10 @@
 
     border: 1px solid $border-color;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .field-checkbox__input:checked + .field-checkbox__text::after {
@@ -144,6 +148,10 @@
       width: 40px;
       height: 40px;
     }
+  }
+
+  .field-checkbox__input:hover + .field-checkbox__text::before {
+    border-color: #bababa;
   }
 
   .field-checkbox__input:checked + .field-checkbox__text::after {

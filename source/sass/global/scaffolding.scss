@@ -68,8 +68,17 @@ input[type="radio"].visually-hidden {
 
   border: none;
 
+  &:active {
+    background-color: $button-color-hover;
+    color: $text-color-active;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
+
+    &:hover {
+      background-color: $button-color-hover;
+    }
   }
 
   @media (min-width: $desktop-width) {

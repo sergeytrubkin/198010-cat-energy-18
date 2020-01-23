@@ -27,6 +27,11 @@
   }
 }
 
+.social__link:active svg {
+  opacity: 0.3;
+  fill: $accent-color;
+}
+
 @media (min-width: $tablet-width) {
   .social__link {
     &--vk {
@@ -45,5 +50,9 @@
       height: 27px;
       margin-right: 12px;
     }
+  }
+
+  .social__link:hover svg {
+    fill: $accent-color;
   }
 }

@@ -15,12 +15,21 @@
 }
 
 .copyright__icon {
-  content: "";
   position: absolute;
   width: 45px;
   height: 40px;
   top: -10px;
   right: -10px;
+
+  fill: #666666;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+
+  & .copyright__icon {
+    fill: $accent-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,5 +42,9 @@
   .copyright__icon {
     top: -8px;
     right: -60px;
+  }
+
+  .copyright__link:hover .copyright__icon {
+    fill: $accent-color;
   }
 }

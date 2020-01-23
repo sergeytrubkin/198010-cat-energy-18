@@ -25,6 +25,10 @@
   @include link-style;
 
   padding: 10px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__button {
@@ -67,8 +71,20 @@
 
     font-size: 18px;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
     &--active {
       border-bottom: 2px solid $accent-color;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 

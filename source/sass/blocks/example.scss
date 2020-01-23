@@ -274,6 +274,17 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
 
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid $accent-color;
+    }
+
     cursor: pointer;
 
     &::after {
@@ -297,6 +308,16 @@
     font-size: 20px;
 
     border-bottom: 1px dotted #b8b8b8;
+
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 
   .example__before {

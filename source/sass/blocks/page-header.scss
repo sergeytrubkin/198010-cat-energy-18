@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+.page-header__logo img:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     border-bottom: none;
@@ -41,6 +45,15 @@
   .page-header__logo img {
     width: 228px;
     height: 58px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
