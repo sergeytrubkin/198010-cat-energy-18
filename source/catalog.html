@@ -6,6 +6,10 @@
   <title>Кэт энерджи - каталог товаров</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
         <button class="main-nav__button" type="button" aria-label="Переключатель меню"></button>
       </div>
       <!-- main-nav -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <div class="main-nav__container">
           <ul class="main-nav__list main-nav__list">
             <li class="main-nav__item">
@@ -80,7 +84,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 500 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -125,7 +129,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 1000 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -169,7 +173,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 500 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -213,7 +217,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> pro 1000 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -258,7 +262,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 500 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -303,7 +307,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 1000 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">1000 г</td>
@@ -347,7 +351,7 @@
                 <a href="#" class="catalog__link catalog__link--title">
                   <h3 class="catalog__title">Cat energy<br> slim 500 г</h3>
                 </a>
-                <table class="catalog__table" cellspacing="0">
+                <table class="catalog__table">
                   <tr>
                     <td class="catalog__row">Объем</td>
                     <td class="catalog__row">500 г</td>
@@ -391,7 +395,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Сахарозаменитель</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
+                  <table class="catalog__table catalog__table--other-products">
                     <tr>
                       <td class="catalog__row">1 упаковка (100 г)</td>
                       <td class="catalog__row">200 Р.</td>
@@ -407,7 +411,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Питьевая вода</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
+                  <table class="catalog__table catalog__table--other-products">
                     <tr>
                       <td class="catalog__row">5 литров</td>
                       <td class="catalog__row">50 Р.</td>
@@ -423,7 +427,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Молоко</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
+                  <table class="catalog__table catalog__table--other-products">
                     <tr>
                       <td class="catalog__row">1 литр</td>
                       <td class="catalog__row">100 Р.</td>
@@ -439,7 +443,7 @@
                   <a href="#" class="catalog__link">
                     <h3 class="catalog__title catalog__title--other-products">Витамины</h3>
                   </a>
-                  <table class="catalog__table catalog__table--other-products" cellspacing="0">
+                  <table class="catalog__table catalog__table--other-products">
                     <tr>
                       <td class="catalog__row">1 упаковка (30 г)</td>
                       <td class="catalog__row">300 Р.</td>
@@ -539,6 +543,7 @@
     </div>
   </footer>
   <!-- page-footer end -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

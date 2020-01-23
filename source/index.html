@@ -6,6 +6,10 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -26,7 +30,7 @@
         <button class="main-nav__button" type="button" aria-label="Переключатель меню"></button>
       </div>
       <!-- main-nav -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <div class="main-nav__container">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -268,7 +272,7 @@
     </div>
   </footer>
   <!-- page-footer end -->
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
