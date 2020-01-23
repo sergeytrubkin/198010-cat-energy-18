@@ -54,6 +54,10 @@
     border: 1px solid $border-color;
     border-radius: 50%;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .field-radio__input:checked + .field-radio__text::after {
@@ -107,6 +111,10 @@
       width: 40px;
       height: 40px;
     }
+  }
+
+  .field-radio__input:hover + .field-radio__text::before {
+    border-color: #bababa;
   }
 
   .field-radio__input:checked + .field-radio__text::after {

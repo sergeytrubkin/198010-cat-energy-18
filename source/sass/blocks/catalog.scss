@@ -68,6 +68,8 @@
   align-items: center;
   width: 50%;
   height: 105px;
+
+  overflow: hidden;
 }
 
 .catalog__block-info {
@@ -143,6 +145,11 @@
     background-image: url("../img/icon-plus-mobile.svg");
 
     opacity: 0.2;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -249,11 +256,13 @@
   .catalog__link {
     position: relative;
     height: auto;
+  }
 
-    &--img {
-      width: 100%;
-      margin-bottom: 37px;
-    }
+  .catalog__link--img {
+    width: 100%;
+    margin-bottom: 37px;
+
+    overflow: inherit;
   }
 
   .catalog__img {
@@ -346,6 +355,10 @@
       height: 60px;
       top: 52px;
       left: calc(50% - 30px);
+    }
+
+    &:hover {
+      background-color: #ebebeb;
     }
   }
 }

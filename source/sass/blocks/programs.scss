@@ -77,6 +77,7 @@
   @include link-style();
 
   position: relative;
+  padding-right: 20px;
 
   font-size: $font-size-medium;
   color: $text-color-heading;
@@ -87,9 +88,14 @@
     width: 24px;
     height: 11px;
     top: 7px;
-    right: -34px;
+    right: -14px;
 
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -164,11 +170,20 @@
 
   .programs__link {
     font-size: 20px;
+    padding-right: 40px;
 
     &::after {
       top: 9px;
-      right: -50px;
+      right: -10px;
     }
+  }
+
+  .programs__link:hover::after {
+    width: 33px;
+    right: -19px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
   }
 }
 
