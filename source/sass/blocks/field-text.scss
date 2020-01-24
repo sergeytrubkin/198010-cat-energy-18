@@ -3,7 +3,7 @@
 
   overflow: hidden;
 
-  &__comment {
+  &--comment {
     padding-top: 6px;
     margin-bottom: 17px;
   }
@@ -65,7 +65,7 @@
   font-size: $font-size-medium;
 }
 
-.field-text__contacts .field-text__text {
+.field-text--contacts .field-text__text {
   margin-right: 10px;
 }
 
@@ -140,7 +140,7 @@
 
     overflow: hidden;
 
-    &__comment {
+    &--comment {
       padding-top: 17px;
       margin-bottom: 45px;
     }
@@ -168,10 +168,6 @@
     font-size: $font-size-heading;
     line-height: 36px;
 
-    & br {
-      display: none;
-    }
-
     &::before,
     &::after {
       content: "";
@@ -190,7 +186,11 @@
     }
   }
 
-  .field-text__contacts .field-text__title {
+  .field-text__title br {
+    display: none;
+  }
+
+  .field-text--contacts .field-text__title {
     margin-bottom: 77px;
   }
 
@@ -207,12 +207,12 @@
     line-height: 20px;
   }
 
-  .field-text__contacts .field-text__text {
+  .field-text--contacts .field-text__text {
     margin-right: 20px;
+  }
 
-    &--indent {
-      margin-right: 15px;
-    }
+  .field-text--contacts .field-text__text--indent {
+    margin-right: 15px;
   }
 
   .field-text__input {
@@ -223,7 +223,7 @@
     line-height: 20px;
   }
 
-  .field-text__contacts .field-text__input {
+  .field-text--contacts .field-text__input {
     padding-left: 20px;
     padding-right: 50px;
   }
@@ -238,7 +238,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .field-text__comment {
+  .field-text--comment {
     margin-bottom: 50px;
   }
 
@@ -264,32 +264,30 @@
     }
   }
 
-  .form__section {
-    & .field-text {
-      width: 570px;
-      padding-top: 0;
-      margin-right: 80px;
-      margin-bottom: 0;
-    }
+  .form__section .field-text {
+    width: 570px;
+    padding-top: 0;
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 
-    & .field-text__wrapper {
-      width: auto;
-      padding: 0;
-      margin: 0;
-    }
+  .form__section .field-text__wrapper {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
 
-    & .field-text__fieldset {
-      margin: 0;
-    }
+  .form__section .field-text__fieldset {
+    margin: 0;
+  }
 
-    & .field-text__list {
-      flex-direction: column;
-    }
+  .form__section .field-text__list {
+    flex-direction: column;
+  }
 
-    & .field-text__item:last-child {
-      margin-bottom: 0;
-      margin-left: 0;
-    }
+  .form__section .field-text__item:last-child {
+    margin-bottom: 0;
+    margin-left: 0;
   }
 
   .field-text__item:last-child {

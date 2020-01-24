@@ -50,10 +50,6 @@
   margin-bottom: 24px;
 }
 
-.field-checkbox__input {
-  display: none;
-}
-
 .field-checkbox__text {
   position: relative;
   padding-left: 45px;
@@ -150,6 +146,10 @@
     }
   }
 
+  .field-checkbox__input:focus + .field-checkbox__text::before {
+    border-color: #bababa;
+  }
+
   .field-checkbox__input:hover + .field-checkbox__text::before {
     border-color: #bababa;
   }
@@ -158,10 +158,6 @@
     content: "";
     left: 10px;
     top: 7px;
-  }
-
-  .field-checkbox__input {
-    width: auto;
   }
 }
 

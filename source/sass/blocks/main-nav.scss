@@ -43,21 +43,6 @@
   }
 }
 
-.main-nav__button {
-  width: 25px;
-  background-color: transparent;
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  border: none;
-
-  &--close {
-    background-image: url("../img/icon-close.svg");
-    background-size: 18px 18px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
@@ -103,10 +88,6 @@
         opacity: 1;
       }
     }
-  }
-
-  .main-nav__button {
-    display: none;
   }
 }
 
